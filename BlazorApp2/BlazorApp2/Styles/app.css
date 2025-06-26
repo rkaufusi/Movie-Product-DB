@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --bs-body-bg: #000000 !important;
+    }
+    html, body {
+        @apply bg-black !important;
+        margin: 0;
+        padding: 0;
+    }
+    .page {
+        @apply flex flex-col min-h-screen w-full;
+    }
+    main {
+        @apply flex-1 w-full;
+    }
+    .content {
+        @apply p-4 mt-16 max-w-7xl mx-auto w-full;
+    }
+    .navbar {
+        @apply fixed top-0 left-0 w-full z-50 flex justify-between items-center;
+    }
+    .navbar-start {
+        @apply flex-shrink-0;
+    }
+    .navbar-end {
+        @apply flex items-center gap-4;
+    }
+    .menu-horizontal {
+        @apply flex flex-row !important;
+    }
+    .menu-horizontal > li {
+        @apply inline-flex;
+    }
+}
