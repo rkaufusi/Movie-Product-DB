@@ -1,0 +1,20 @@
+﻿@inherits LayoutComponentBase
+<HeadContent>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+</HeadContent>
+<div class="page">
+    <header class="w-full fixed top-0 z-50">
+        <NavMenu />
+    </header>
+    <main class="flex-1 w-full">
+        <article class="content max-w-7xl mx-auto">
+            @Body
+        </article>
+    </main>
+</div>
+<div id="blazor-error-ui" class="alert alert-error fixed bottom-4 right-4">
+    An unhandled error has occurred.
+    <a href="" class="reload btn btn-sm btn-ghost">Reload</a>
+    <a class="dismiss btn btn-sm btn-ghost">🗙</a>
+</div>
